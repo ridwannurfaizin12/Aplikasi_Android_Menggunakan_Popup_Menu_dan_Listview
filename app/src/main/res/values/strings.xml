@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Aplikasi Pertama</string>
+    <string name="var1">LOGIN</string>
+    <string name="eEmail">Masukan Email</string>
+    <string name="ePassword">Masukan Password</string>
+    <string name="bSigin">SIGN-IN</string>
+
+    <string name="tdata">Data Anda</string>
+    <string name="tEmail">Email: </string>
+    <string name="tPassword">Password: </string>
+    <string name="txemail">Ini Hasil Email</string>
+    <string name="txpassword">Ini Hasil Password</string>
+    <string name="label2">Login Berhasil</string>
+
+</resources>
