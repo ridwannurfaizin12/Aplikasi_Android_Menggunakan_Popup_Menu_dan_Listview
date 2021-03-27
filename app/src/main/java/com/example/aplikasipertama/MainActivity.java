@@ -1,9 +1,12 @@
 package com.example.aplikasipertama;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +19,25 @@ public class MainActivity extends AppCompatActivity {
     EditText edemail, edpassword;
 
     String nama, password;
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Method menampilkan menu
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected( MenuItem item) {
+        //Membuat kondisi jika dipilih adalah id mnDaftar
+        if (item.getItemId() == R.id.mnDaftar) {
+            //Method unutk memanggil daftar activity
+            Intent i = new Intent(getApplicationContext(), DaftarActivity.class);
+            startActivity(i);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,5 +104,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
     }
 }
