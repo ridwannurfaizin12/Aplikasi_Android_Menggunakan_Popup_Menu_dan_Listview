@@ -24,6 +24,15 @@ public class DaftarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daftar);
 
+        // Menghubungkan komponen yang terdapat pada java class dengan layout
+        edtNama = findViewById(R.id.edNama);
+        edtAlamat = findViewById(R.id.edAlamat);
+        edtEmail = findViewById(R.id.edEmail);
+        edtpassword = findViewById(R.id.edPassword);
+        edtrepass = findViewById(R.id.edrepas);
+        fab = findViewById(R.id.fabSimpan);
+
+
         //Membuat mthod untuk even dari floating button
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
